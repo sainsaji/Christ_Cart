@@ -21,7 +21,7 @@ exports.loginUser = async (params) => {
         if (err) {
           reject({
             data: err,
-            message: "Something went wrong12222, please try again",
+            message: "Something went wrong, please try again",
             statusCode: 400,
           });
         }
