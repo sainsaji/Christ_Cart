@@ -1,0 +1,17 @@
+[
+    {
+        "regno": 1,
+        "name": "Lokesh",
+        "class": "MCA",
+        "event": "Dance",
+        "team": "Dance Team"
+
+    },
+    {
+        "regno": 2,
+        "name": "Kumar",
+        "class": "MCA",
+        "event": "Singing",
+        "team": "Singing Team"
+    }
+]
