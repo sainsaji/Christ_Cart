@@ -4,8 +4,7 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ccc;
-  background-color: white;
-  color: blue;
+  color: white;
   > div {
     height: 100%;
     display: flex;
@@ -207,6 +206,15 @@
 
 .side-menu.show {
   transform: translateX(0);
+}
+
+.header-container__middle h3{
+  color: rgb(7, 82, 82);
+}
+
+.header-container__middle h3:hover{
+  cursor: pointer;
+  color: rgb(19, 96, 96);
 }
 
 .darken-background {
