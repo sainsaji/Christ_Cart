@@ -38,8 +38,8 @@ export class ProfileComponent implements OnInit {
   userId = null;
   alertMessage = '';
   alertType = '';
-  alertVisible = false;
-  loading = false;
+  alertVisible = true;
+  loading = true;
 
   constructor(
     private _api: ApiService,
@@ -49,9 +49,9 @@ export class ProfileComponent implements OnInit {
 
   // Update user fields with current details
   ngOnInit(): void {
-    const { user_id, full_name, email } = this._token.getUser();
+    const { user_id, fullname, email } = this._token.getUser();
     this.userId = user_id;
-    this.user[0].value = full_name;
+    this.user[0].value = fullname;
     this.user[1].value = email;
     console.log(this.user);
   }
