@@ -39,8 +39,8 @@ export class ProfileComponent implements OnInit {
   userId = null;
   alertMessage = '';
   alertType = '';
-  alertVisible = false;
-  loading = false;
+  alertVisible = true;
+  loading = true;
 
   constructor(
     private _api: ApiService,
