@@ -13,25 +13,25 @@ export class ProfileComponent implements OnInit {
     {
       key: 'fullName',
       label: 'Full name',
-      value: 'fullname',
+      value: '',
       type: 'text',
     },
     {
       key: 'email',
       label: 'Email address',
-      value: 'email',
+      value: '',
       type: 'email',
     },
     {
       key: 'password',
       label: 'Password',
-      value: 'password',
+      value: '',
       type: 'password',
     },
     {
       key: 'confirmPassword',
       label: 'Confirm password',
-      value: 'Confirm password',
+      value: '',
       type: 'password',
     },
   ];
