@@ -38,7 +38,6 @@ export class CheckoutComponent implements OnInit {
 
   submitCheckout() {
     this.loading = true;
-    alert("You have successfully placed your order...");
     setTimeout(() => {
       this._cart
         .submitCheckout(this.currentUser.user_id, this.cartData)
@@ -50,6 +49,7 @@ export class CheckoutComponent implements OnInit {
             this.products = res.products;
             this.currentStep = 4;
             this._cart.clearCart();
+            alert("You have succesfully checked out.. Happy Shopping");
           },
           (err) => {
             console.log(err);
