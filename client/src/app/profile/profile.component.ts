@@ -14,7 +14,8 @@ export class ProfileComponent implements OnInit {
       key: 'fullName',
       label: 'Full name',
       value: '',
-      type: 'text',
+      placeholder:"Fullname",
+      type: 'text'
     },
     {
       key: 'email',
@@ -49,9 +50,9 @@ export class ProfileComponent implements OnInit {
 
   // Update user fields with current details
   ngOnInit(): void {
-    const { user_id, full_name, email } = this._token.getUser();
+    const { user_id, fullname, email } = this._token.getUser();
     this.userId = user_id;
-    this.user[0].value = full_name;
+    this.user[0].value = fullname;
     this.user[1].value = email;
     console.log(this.user);
   }
@@ -87,7 +88,7 @@ export class ProfileComponent implements OnInit {
             const oldDetails = this._token.getUser();
             this._token.setUser({
               ...oldDetails,
-              full_name: this.user[0].value,
+              fullname: this.user[0].value,
               email: this.user[1].value,
             });
             this.user[2].value = '';
