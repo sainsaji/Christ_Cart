@@ -110,7 +110,7 @@ export class CheckoutComponent implements OnInit {
     },
     {
       name: 'Address',
-      placeholder: 'Enter your address',
+      placeholder: 'Enter your current address',
       type: 'text',
       value: '',
     },
