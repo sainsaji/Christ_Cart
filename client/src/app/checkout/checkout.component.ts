@@ -49,7 +49,6 @@ export class CheckoutComponent implements OnInit {
             this.products = res.products;
             this.currentStep = 4;
             this._cart.clearCart();
-            alert("You have succesfully checked out.. Happy Shopping");
           },
           (err) => {
             console.log(err);
