@@ -1,21 +1,29 @@
 .footer
 { 
-    background-color:#000;
+    background-color:rgb(255, 255, 255);
     padding: 20px 10px;
     position: sticky;
-    top: 100%;
-
+    top: 70%;
+    border-top: 1px solid rgb(15, 1, 1);
 }
 h1{
-    color: white;
     font-size: 20px;
+    color: black;
+}
+h1:hover{
+    color: cadetblue;
+    cursor: grab;
 }
 a
 {
-    color: white;
+    color: rgb(4, 0, 0);
     text-decoration: none;
     padding: 13px;
     font-size: 17px;
+    background-color: aqua;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: black;
 }
 a:hover{
     background-color: green;
@@ -24,5 +32,7 @@ i{
     color: var(--primary-color);
 }
 p{
-    color: white;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
 }
